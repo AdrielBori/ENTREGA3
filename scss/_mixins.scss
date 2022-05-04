@@ -13,13 +13,11 @@
             margin-right:0px;
             padding:20px 5px;
             background-position: center;
-            background-size:80px;
+            background-size:60px;
             background-repeat: no-repeat;
             img{
-                margin:20px;
+                margin:15px;
             }
-            
-            
 }
 @mixin hovered (){
     background-size:0px;

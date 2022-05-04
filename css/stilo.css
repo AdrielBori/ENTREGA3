@@ -205,11 +205,11 @@ footer {
       margin-right: 0px;
       padding: 20px 5px;
       background-position: center;
-      background-size: 80px;
+      background-size: 60px;
       background-repeat: no-repeat;
       background-image: url("../imagenes/fonicof.png"); }
       footer .redes .f img {
-        margin: 20px; }
+        margin: 15px; }
     footer .redes .f:hover {
       background-size: 0px;
       transition: ease-out 0.7s;
@@ -222,11 +222,11 @@ footer {
       margin-right: 0px;
       padding: 20px 5px;
       background-position: center;
-      background-size: 80px;
+      background-size: 60px;
       background-repeat: no-repeat;
       background-image: url("../imagenes/fonicw.png"); }
       footer .redes .w img {
-        margin: 20px; }
+        margin: 15px; }
     footer .redes .w:hover {
       background-size: 0px;
       transition: ease-out 0.7s;
@@ -239,11 +239,11 @@ footer {
       margin-right: 0px;
       padding: 20px 5px;
       background-position: center;
-      background-size: 80px;
+      background-size: 60px;
       background-repeat: no-repeat;
       background-image: url("../imagenes/fonicoi.png"); }
       footer .redes .ins img {
-        margin: 20px; }
+        margin: 15px; }
     footer .redes .ins:hover {
       background-size: 0px;
       transition: ease-out 0.7s;
@@ -371,11 +371,11 @@ header.enc_galeria {
       border-radius: 5px;
       filter: grayscale(75%); }
     .main__galeria .galeria_item .G1_img:hover {
-      transform: scale(1.1);
+      transform: scale(1.05);
       transition: ease-out 0.5s;
       filter: grayscale(0%); }
     .main__galeria .galeria_item h4 {
-      display: none;
+      display: block;
       position: absolute;
       bottom: 0;
       color: aqua; }
@@ -385,6 +385,51 @@ header.enc_galeria {
 
 .L2 {
   grid-row-start: span 2; }
+
+.light-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0);
+  transition: ease-in-out 0.3s; }
+  .light-box img {
+    width: 50vw;
+    border-radius: 5%; }
+  .light-box .close {
+    position: absolute;
+    display: block;
+    top: 20px;
+    right: 20px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    text-decoration: none;
+    color: white;
+    width: 30px;
+    height: 30px; }
+  .light-box .next {
+    background-color: #6e2121;
+    text-align: center;
+    line-height: 30px;
+    text-decoration: none;
+    color: white;
+    border-radius: 10%;
+    width: 30px;
+    height: 35px;
+    margin: 10px; }
+    .light-box .next span {
+      font-size: 30px;
+      color: white; }
+
+.light-box:target {
+  transform: scale(1); }
 
 /*-------servicios--------*/
 header.enc_Ser {
@@ -517,7 +562,6 @@ img.et__img {
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 200px; }
   .R1 {
-    grid-row-start: span 2;
     grid-column-start: span 2; }
   .R2 {
     grid-row-start: span 2; }
