@@ -56,6 +56,11 @@ body {
 p {
   font-family: museo; }
 
+h6 {
+  font-family: honey;
+  font-size: 35px;
+  text-shadow: #fbbdbc 5px 2px; }
+
 /*---------ENCABEZADO GRAL-------------*/
 .encabezado {
   width: 100%;
@@ -503,7 +508,8 @@ main.main_ser .tarjetas {
 #carouselExampleCaptions {
   z-index: 0;
   top: 0;
-  width: 100%; }
+  width: 75%;
+  margin-left: 12.5vw; }
 
 .enc_Ser {
   position: relative; }

@@ -26,6 +26,12 @@ body{
 p{
     font-family:$letraSub; 
 }
+h6{
+    font-family: $letra;
+    font-size: 35px;
+    text-shadow: #fbbdbc 5px 2px;
+
+}
 
 
 /*---------ENCABEZADO GRAL-------------*/
@@ -360,7 +366,11 @@ main.main_ser{
 #carouselExampleCaptions{
     z-index:0;
     top: 0;
-    width:100%;
+    width:75%;
+    margin-left:12.5vw;
+    
+    
+    
 }
 .enc_Ser{
     position: relative;
