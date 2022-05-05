@@ -10,6 +10,14 @@
     font-family:museo;
     src: url(../Museo300.ttf);
 }
+@font-face {
+    font-family:care;
+    src: url(../Carattere-Regular.ttf);
+}
+
+
+
+
 @import"mixins";
 @import "variables";
 %flex{
@@ -55,6 +63,9 @@ h6{
                     width:350px;
                     height: 100px;
                     @include Titulos(25px 30px,60px );
+                }
+                span{
+                    font-family: care;
                 }
                 h1:hover{
                     @include transform (1.2,0.7s);
