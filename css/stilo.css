@@ -265,7 +265,7 @@ footer {
 
 /*-----NOSOTROS--------*/
 header.enc_nts {
-  height: 37rem;
+  height: 35rem;
   width: 100vw;
   background-image: url("../imagenes/colage.webp");
   background-repeat: no-repeat;
@@ -302,11 +302,12 @@ header.enc_nts {
 main.main_nts section.sec_nts {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   border-radius: 15px;
   background-image: linear-gradient(white, white, #f1aaaa);
-  height: 562px; }
+  height: max-content;
+  width: 100%; }
   main.main_nts section.sec_nts img {
     border-radius: 15px; }
   main.main_nts section.sec_nts h5 {
@@ -588,4 +589,6 @@ img.et__img {
     width: 90vw; }
   img.et__img {
     width: 170px;
-    border-radius: 3px; } }
+    border-radius: 3px; }
+  .sec_img {
+    width: 80vw; } }
