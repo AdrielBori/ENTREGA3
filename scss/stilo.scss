@@ -222,8 +222,9 @@ main.main_nts{
 }
 
 /*-------GALERIA--------*/
+
 header.enc_galeria{
-    background-image: linear-gradient($colorC,white);
+    background-image: linear-gradient($colorC, white);
     @include nav-menu;
 }
 .main__galeria{
