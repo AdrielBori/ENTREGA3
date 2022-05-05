@@ -30,7 +30,7 @@
     
 }
 @mixin fondo () {
-    background-image: url("../imagenes/fondo.jpg");
+    background-image: url("../imagenes/fondo.webp");
     background-position:center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -52,7 +52,7 @@
     background-repeat:no-repeat;
     text-align: center;
     margin-right: 5px;
-    background-image:url("../imagenes/acuarela.png");
+    background-image:url("../imagenes/acuarela.webp");
     padding: $pad;
     font-size: $Tam;
     font-family:$letra;

@@ -47,7 +47,7 @@
   justify-content: center; }
 
 section, .main__galeria, main.main_ser .tarjetas {
-  background-image: url("../imagenes/Imagen1.png");
+  background-image: url("../imagenes/LOGO.png");
   background-size: 80px; }
 
 body {
@@ -66,7 +66,7 @@ h6 {
   width: 100%;
   height: 42rem;
   overflow: hidden;
-  background-image: url("../imagenes/fondo.jpg");
+  background-image: url("../imagenes/fondo.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -86,7 +86,7 @@ h6 {
     background-repeat: no-repeat;
     text-align: center;
     margin-right: 5px;
-    background-image: url("../imagenes/acuarela.png");
+    background-image: url("../imagenes/acuarela.webp");
     padding: 15px 30px;
     font-size: 15px;
     font-family: honey;
@@ -98,7 +98,7 @@ h6 {
     background-size: contain; }
 
 a.navbar-brand img {
-  opacity: 0.6; }
+  filter: saturate(80); }
 
 #D-empresa {
   transition: ease-in-out 0.5s;
@@ -198,7 +198,7 @@ section {
 footer {
   display: flex;
   flex-direction: column;
-  background-image: linear-gradient(#fbbdbc, white, white);
+  background-image: linear-gradient(white, #fbbdbc, #fbbdbc);
   text-align: center;
   border-radius: 15px; }
   footer .redes {
@@ -212,7 +212,7 @@ footer {
       background-position: center;
       background-size: 60px;
       background-repeat: no-repeat;
-      background-image: url("../imagenes/fonicof.png"); }
+      background-image: url("../imagenes/fonicof.webp"); }
       footer .redes .f img {
         margin: 15px; }
     footer .redes .f:hover {
@@ -229,7 +229,7 @@ footer {
       background-position: center;
       background-size: 60px;
       background-repeat: no-repeat;
-      background-image: url("../imagenes/fonicw.png"); }
+      background-image: url("../imagenes/fonicw.webp"); }
       footer .redes .w img {
         margin: 15px; }
     footer .redes .w:hover {
@@ -246,7 +246,7 @@ footer {
       background-position: center;
       background-size: 60px;
       background-repeat: no-repeat;
-      background-image: url("../imagenes/fonicoi.png"); }
+      background-image: url("../imagenes/fonicoi.webp"); }
       footer .redes .ins img {
         margin: 15px; }
     footer .redes .ins:hover {
@@ -266,9 +266,11 @@ footer {
 /*-----NOSOTROS--------*/
 header.enc_nts {
   height: 37rem;
-  background-image: url("../imagenes/colage.png");
+  width: 100vw;
+  background-image: url("../imagenes/colage.webp");
   background-repeat: no-repeat;
   background-position: center;
+  background-position-y: 3rem;
   background-size: contain;
   background-attachment: fixed; }
   header.enc_nts nav #MH {
@@ -286,7 +288,7 @@ header.enc_nts {
     background-repeat: no-repeat;
     text-align: center;
     margin-right: 5px;
-    background-image: url("../imagenes/acuarela.png");
+    background-image: url("../imagenes/acuarela.webp");
     padding: 15px 30px;
     font-size: 15px;
     font-family: honey;
@@ -348,7 +350,7 @@ header.enc_galeria {
     background-repeat: no-repeat;
     text-align: center;
     margin-right: 5px;
-    background-image: url("../imagenes/acuarela.png");
+    background-image: url("../imagenes/acuarela.webp");
     padding: 15px 30px;
     font-size: 15px;
     font-family: honey;
@@ -380,7 +382,7 @@ header.enc_galeria {
       transition: ease-out 0.5s;
       filter: grayscale(0%); }
     .main__galeria .galeria_item h4 {
-      display: block;
+      display: none;
       position: absolute;
       bottom: 0;
       color: aqua; }
@@ -405,7 +407,7 @@ header.enc_galeria {
   transform: scale(0);
   transition: ease-in-out 0.3s; }
   .light-box img {
-    width: 50vw;
+    width: 70vw;
     border-radius: 5%; }
   .light-box .close {
     position: absolute;
@@ -454,7 +456,7 @@ header.enc_Ser {
     background-repeat: no-repeat;
     text-align: center;
     margin-right: 5px;
-    background-image: url("../imagenes/acuarela.png");
+    background-image: url("../imagenes/acuarela.webp");
     padding: 15px 30px;
     font-size: 15px;
     font-family: honey;
@@ -471,7 +473,7 @@ main.main_ser .tarjetas {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-auto-rows: minmax(200px, auto);
   grid-auto-flow: dense;
-  padding: 20px 60px;
+  padding: 20px 5vw;
   gap: 10px; }
   main.main_ser .tarjetas .tarj {
     width: 300px;
@@ -498,7 +500,7 @@ main.main_ser .tarjetas {
       transition: all 0.3s;
       position: absolute;
       bottom: -15px;
-      right: -25px;
+      right: -29px;
       filter: grayscale(40%); }
     main.main_ser .tarjetas .tarj .tarj-bt:hover {
       transform: scale(1.2);
@@ -537,15 +539,17 @@ div#et__cont {
     bottom: -18%;
     box-shadow: #fbbdbc -10px 10px 5px; }
   div#et__cont .D3 p {
-    background-image: url("../imagenes/r3.png");
+    background-color: #fbbdbc;
+    border-radius: 5px;
     background-repeat: no-repeat;
+    box-shadow: gray 5px 5px 3px;
     background-size: 200px 150px;
-    width: 200px;
+    width: 180px;
+    font-size: bolder;
     margin: 0;
     position: absolute;
     top: 0;
     left: 0;
-    text-align: center;
     font-size: 18px; }
 
 img.et__img {
@@ -579,4 +583,9 @@ img.et__img {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-auto-rows: 200px;
-    justify-content: center; } }
+    justify-content: center; }
+  .light-box img {
+    width: 90vw; }
+  img.et__img {
+    width: 170px;
+    border-radius: 3px; } }
