@@ -32,7 +32,8 @@ body{
     position: relative;
 }
 p{
-    font-family:$letraSub; 
+    font-family:$letraSub;
+    
 }
 h6{
     font-family: $letra;
@@ -85,12 +86,11 @@ main.mainindex{
         overflow: hidden;
         position: relative;
         video{
-            width: 100%;
-            min-width:650px;
+            width: 95%;
+            min-width:450px;
             max-width:1050px ;
             position: absolute;
-            left: 05vw;
-            top: -5vh;
+            left: 10%;
             opacity: 80%;
         }
     }
@@ -99,17 +99,19 @@ section{
     width:99.8%;
     height: max-content;
     @extend %Fondolog;
+    
     div#formu{
         @extend %flex;
         margin: 2px;
         border-radius: 15px;
+        justify-content:space-evenly;
         form#FC{
             background-image: linear-gradient( white, white, #76d1d0 , #76d1d0);
             border: solid 0.5px;
             border-radius: 10px;
             box-shadow: rgba(80, 77, 77, 0.473) 10px 5px;
-            width: 20rem;
-            min-width:280px;
+            min-width:260px;
+            max-width: 20rem;
             height: max-content;
             }
         form#FC:hover{
@@ -118,21 +120,20 @@ section{
             transition: ease-in-out 0.7s;
         }
         div#etiqueta{
-            margin-left: 15px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            width: 300px;
+            max-width: 300px;
+            min-width:280px;
             h5{
                 margin-left: 40px;
                 top: 15vh;
                 margin: 0;
-                @include subTitulos(20px 25px, 30px);
+                @include subTitulos(15px 20px, 20px);
                 @include Animacion();
             }
             p{
-                margin-left: 40px;
                 top: 30vh;
                 width:25vw;
                 transition: ease-in 0.5s;
@@ -472,7 +473,7 @@ img.et__img{
         height: 65rem;
     }
     
-    @media screen and (min-width:0px) and (max-width:480px){
+    @media screen and (min-width:281px) and (max-width:480px){
         .main__galeria{
             display: grid;
             grid-template-columns: repeat(1, 1fr);
@@ -492,5 +493,41 @@ img.et__img{
                 width:80vw;
             }
     }
+    @media screen and (min-width:0px) and (max-width:340px){
+        #D-empresa{
+            h1{
+                width:270px;
+                    height: 76px;
+                    @include Titulos(19px 23px,46px );
+            }
+        }
+        form.m-3{
+            margin: 0;
+
+
+        }
+        div#etiqueta{
+            margin: 0px;
+            h5{
+                margin-left: 0px;
+                top: 15vh;
+                margin: 0;
+                font-size: 5px;
+            }
+            p{
+                margin-left: 0;
+                font-size:small;
+            }
+        }
+        video{
+            top: 20%;
+            left: -25%;
+        }
+
+
+    }
+
+
+
     
 }
