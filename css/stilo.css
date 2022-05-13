@@ -482,7 +482,7 @@ main.main_ser .tarjetas {
   padding: 20px 5vw;
   gap: 10px; }
   main.main_ser .tarjetas .tarj {
-    width: 300px;
+    max-width: 290px;
     height: 350px;
     justify-content: center;
     background-color: #faf8f8;
@@ -494,7 +494,7 @@ main.main_ser .tarjetas {
     text-align: center;
     position: relative; }
     main.main_ser .tarjetas .tarj .tarj-img {
-      width: 250px;
+      max-width: 250px;
       border-radius: 3px;
       opacity: 0.9; }
     main.main_ser .tarjetas .tarj .tarj-bt {
@@ -506,7 +506,7 @@ main.main_ser .tarjetas {
       transition: all 0.3s;
       position: absolute;
       bottom: -15px;
-      right: -29px;
+      right: -24px;
       filter: grayscale(40%); }
     main.main_ser .tarjetas .tarj .tarj-bt:hover {
       transform: scale(1.2);
@@ -536,7 +536,7 @@ div#et__cont {
   div#et__cont .D1 {
     border-radius: 3px;
     position: absolute;
-    left: 50%;
+    left: 45%;
     top: 0%;
     box-shadow: #76d1d0 -10px 10px 5px; }
   div#et__cont .D2 {
@@ -545,21 +545,19 @@ div#et__cont {
     bottom: -18%;
     box-shadow: #fbbdbc -10px 10px 5px; }
   div#et__cont .D3 p {
-    background-color: #fbbdbc;
-    border-radius: 5px;
-    background-repeat: no-repeat;
-    box-shadow: gray 5px 5px 3px;
-    background-size: 200px 150px;
-    width: 180px;
-    font-size: bolder;
-    margin: 0;
+    background-color: white;
+    border-radius: 50%;
+    color: #427574;
+    border: solid #fbbdbc 5px;
+    width: 160px;
+    height: 160px;
+    line-height: 30px;
+    text-align: center;
     position: absolute;
-    top: 0;
-    left: 0;
-    font-size: 18px; }
+    font-size: 14px; }
 
 img.et__img {
-  width: 230px;
+  width: 220px;
   border-radius: 3px; }
 
 .tarj-title {
@@ -568,7 +566,7 @@ img.et__img {
   text-shadow: #fbbdbc 5px 3px; }
 
 /*--------------------------------*/
-@media screen and (min-width: 0px) and (max-width: 678px) {
+@media screen and (min-width: 480px) and (max-width: 678px) {
   div#formu {
     flex-direction: column; }
   header.enc_nts {
@@ -584,21 +582,23 @@ img.et__img {
   .maxc {
     height: 65rem; } }
 
-@media screen and (min-width: 0px) and (max-width: 678px) and (min-width: 281px) and (max-width: 480px) {
+@media screen and (min-width: 0px) and (max-width: 480px) {
   .main__galeria {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-auto-rows: 200px;
     justify-content: center; }
+  .maxc {
+    height: 65rem; }
   .light-box img {
     width: 90vw; }
+  div#formu {
+    flex-direction: column; }
   img.et__img {
     width: 170px;
     border-radius: 3px; }
   .sec_img {
-    width: 80vw; } }
-
-@media screen and (min-width: 0px) and (max-width: 678px) and (min-width: 0px) and (max-width: 340px) {
+    width: 80vw; }
   #D-empresa h1 {
     width: 270px;
     height: 76px;
@@ -624,4 +624,16 @@ img.et__img {
       font-size: small; }
   video {
     top: 20%;
-    left: -25%; } }
+    left: -25%; }
+  .A2 {
+    grid-column-start: span 1; }
+  .L2 {
+    grid-row-start: span 1; }
+  .tarj {
+    width: 80%; }
+    .tarj .tarj-img {
+      width: 90%; }
+    .tarj .tarj-text {
+      font-size: 14px; }
+    .tarj .tarj-bt {
+      transform: scale(0.8); } }
