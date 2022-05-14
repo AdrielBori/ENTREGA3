@@ -90,7 +90,7 @@ h6 {
     background-repeat: no-repeat;
     text-align: center;
     margin-right: 5px;
-    background-image: url("../imagenes/acuarela.webp");
+    background-image: url("../imagenes/r3.png");
     padding: 15px 30px;
     font-size: 15px;
     font-family: honey;
@@ -127,6 +127,9 @@ a.navbar-brand img {
     transition: ease-out 0.7s;
     color: #faf8f8;
     text-shadow: black 5px 2px; }
+
+a#CL {
+  font-family: museo; }
 
 .maxc {
   height: max-content;
@@ -181,8 +184,8 @@ section {
         background-repeat: no-repeat;
         text-align: center;
         background-image: url("../imagenes/tr.png");
-        padding: 15px 20px;
-        font-size: 20px;
+        padding: 13px 17px;
+        font-size: 27px;
         font-family: honey;
         transition: ease-in 0.5s;
         animation-name: ani1°;
@@ -192,7 +195,7 @@ section {
         animation-iteration-count: infinite; }
       section div#formu div#etiqueta p {
         top: 30vh;
-        width: 25vw;
+        width: 35vw;
         transition: ease-in 0.5s;
         text-align: center; }
 
@@ -293,7 +296,7 @@ header.enc_nts {
     background-repeat: no-repeat;
     text-align: center;
     margin-right: 5px;
-    background-image: url("../imagenes/acuarela.webp");
+    background-image: url("../imagenes/r3.png");
     padding: 15px 30px;
     font-size: 15px;
     font-family: honey;
@@ -356,7 +359,7 @@ header.enc_galeria {
     background-repeat: no-repeat;
     text-align: center;
     margin-right: 5px;
-    background-image: url("../imagenes/acuarela.webp");
+    background-image: url("../imagenes/r3.png");
     padding: 15px 30px;
     font-size: 15px;
     font-family: honey;
@@ -462,7 +465,7 @@ header.enc_Ser {
     background-repeat: no-repeat;
     text-align: center;
     margin-right: 5px;
-    background-image: url("../imagenes/acuarela.webp");
+    background-image: url("../imagenes/r3.png");
     padding: 15px 30px;
     font-size: 15px;
     font-family: honey;
@@ -593,7 +596,8 @@ img.et__img {
   .light-box img {
     width: 90vw; }
   div#formu {
-    flex-direction: column; }
+    flex-direction: column;
+    align-items: center; }
   img.et__img {
     width: 170px;
     border-radius: 3px; }

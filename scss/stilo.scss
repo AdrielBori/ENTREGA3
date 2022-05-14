@@ -14,10 +14,6 @@
     font-family:care;
     src: url(../Carattere-Regular.ttf);
 }
-
-
-
-
 @import"mixins";
 @import "variables";
 %flex{
@@ -41,8 +37,6 @@ h6{
     text-shadow: #fbbdbc 5px 2px;
 
 }
-
-
 /*---------ENCABEZADO GRAL-------------*/
 .encabezado{ 
     width: 100%;
@@ -74,6 +68,9 @@ h6{
                     text-shadow: black 5px 2px;
                 }
     }
+a#CL{
+    font-family:museo;
+}
 .maxc{
     height: max-content;
     height: 50rem;
@@ -99,7 +96,6 @@ section{
     width:99.8%;
     height: max-content;
     @extend %Fondolog;
-    
     div#formu{
         @extend %flex;
         margin: 2px;
@@ -130,12 +126,12 @@ section{
                 margin-left: 40px;
                 top: 15vh;
                 margin: 0;
-                @include subTitulos(15px 20px, 20px);
+                @include subTitulos(13px 17px, 27px);
                 @include Animacion();
             }
             p{
                 top: 30vh;
-                width:25vw;
+                width:35vw;
                 transition: ease-in 0.5s;
                 text-align:center;
             }
@@ -204,7 +200,6 @@ header.enc_nts{
     @include nav-menu;
 }
 main.main_nts{
-
     section.sec_nts{
         display: flex;
         flex-direction: column;
@@ -216,7 +211,6 @@ main.main_nts{
         width: 100%;
             img{
                 border-radius: 15px;
-
             }
             h5{
                 @include subTitulos(30px 35px, 80px);
@@ -232,9 +226,7 @@ main.main_nts{
             }
     }
 }
-
 /*-------GALERIA--------*/
-
 header.enc_galeria{
     background-image: linear-gradient($colorC, white);
     @include nav-menu;
@@ -290,7 +282,6 @@ header.enc_galeria{
     transition:ease-in-out 0.3s;
     img{
         width: 70vw;
-        
         border-radius: 5%;
     }
     .close{
@@ -327,9 +318,6 @@ header.enc_galeria{
     transform: scale(1);
     
 }
-
-
-
 /*-------servicios--------*/
 header.enc_Ser{
     background-image: linear-gradient($colorC,white);
@@ -466,7 +454,6 @@ img.et__img{
     .maxc{
         height: 65rem;
     }
-    
 }
 @media screen and (min-width:0px) and (max-width:480px){
     .main__galeria{
@@ -485,6 +472,7 @@ img.et__img{
     }
     div#formu{
         flex-direction: column;
+        align-items: center;
     }
     img.et__img{
         width: 170px;
@@ -536,10 +524,6 @@ img.et__img{
             }
             .tarj-bt{
                 transform: scale(0.8);
-
-
             }
-
         }
-    
 }
